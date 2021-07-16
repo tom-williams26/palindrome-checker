@@ -1,0 +1,72 @@
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  line-height: 1;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  padding: 2em 0;
+}
+.box div,
+.box div h1,
+.box div p {
+  padding: 1em 1em;
+}
+.box div p {
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  //   padding: 2em 4em;
+  justify-content: space-around;
+}
+
+.form div input {
+  width: 100%;
+  padding: 0.2em 0;
+}
+
+.form div button {
+  //   margin: 2em 0 0;
+  width: 25vw;
+  padding: 0.7em 0;
+  cursor: pointer;
+  background-color: #e07a5f;
+  border: none;
+  color: rgb(40, 44, 52);
+  text-align: center;
+  margin: 1.5em 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.form div button:hover {
+  opacity: 1;
+}
+
+.result-success {
+  color: #81b29a;
+}
+
+.result-danger {
+  color: red;
+}
+
+.input-error {
+  color: red;
+}
