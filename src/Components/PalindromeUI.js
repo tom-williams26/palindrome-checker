@@ -10,7 +10,7 @@ const initialState = {
     showPalindrome: false
 }
 
-class Palindrome extends React.Component {
+class PalindromeUI extends React.Component {
     constructor(props) {
         super(props);
         this.state = initialState;
@@ -59,13 +59,7 @@ class Palindrome extends React.Component {
                 showPalindrome: false
             })
         }
-       
-        
-
-    
     }
-
-
     // Component Elements.
     render () {
         return (
@@ -73,23 +67,25 @@ class Palindrome extends React.Component {
                 <div className="box">
                     <div>
                         <h1 className="title">Palindrome Checker</h1>
-                        <p>This palindrome checker will determine if the word you pass below reads the same forwards and backwards. Non-alphanumeric characters are ignored.</p>
+                        <p>This palindrome checker will determine if the word you enter below 
+                            reads the same forwards and backwards. Non-alphanumeric characters are 
+                            ignored. Any special Characters entered will be removed.</p>
                     </div>
 
                     <form className="form" onSubmit={this.handleSubmit}>
                         <div>
                             <input type="text"  value={this.state.input} onChange={this.handleChange} placeholder="Enter your word..."/>
                             {this.state.error ? (
-                            <div className="input-error">{this.state.error}</div>) : null}
+                            <h4 className="input-error">{this.state.error}</h4>) : null}
                             <button type="submit">Submit</button>
                         </div>
                     </form>
                     <div>
-                        {this.state.showPalindrome ? ( <h3 className={this.state.result ? "result-success" : "result-danger"}>
+                        {this.state.showPalindrome ? ( <h4 className={this.state.result ? "result-success" : "result-danger"}>
                            {this.state.result 
                             ? "This word is Palindrome."
                             : "This word is NOT Palindrome... Try Again..."}
-                            </h3> ) : null}
+                            </h4> ) : null}
                     </div>
                 </div>
             </div>
@@ -97,4 +93,4 @@ class Palindrome extends React.Component {
     }
 }
 
-export default Palindrome;
+export default PalindromeUI;

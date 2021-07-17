@@ -1,17 +1,19 @@
 # Palindrome Checker
 
+## The original script can be found here: https://github.com/tom-williams26/FCC-Projects
+
 ## After completing FreeCodeCamp's Palindrome project. I decided to go one step further and integrate the script into a user interface using React.
 
-## The project is not quite finished. I am currently working on integrating some unit tests using Jest. Then finally applying responsive design to the application.
+## Jest Unit Testing. Responsive Design for mobile & tablets.
 
-# npm packages includes:
+## npm packages includes:
 
-# react
+## react
 
-# bootstrap
+## bootstrap
 
-# bootstrap-react
+## bootstrap-react
 
-# node-sass
+## node-sass
 
-# jest (unit-testing)
+## jest (unit-testing)
